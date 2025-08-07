@@ -1,0 +1,102 @@
+[0m[1mdocker_image.nginx: Refreshing state... [id=sha256:2cd1d97f893f70cee86a38b7160c30e5750f3ed6ad86c598884ca9c6a563a501nginx:latest][0m
+[0m[1mdocker_container.nginx: Refreshing state... [id=126141a01a8493a12f391f12900d7c35c3f68e77d356d6388e3ccb454e0df66a][0m
+
+Terraform used the selected providers to generate the following execution
+plan. Resource actions are indicated with the following symbols:
+  [31m-[0m destroy[0m
+
+Terraform will perform the following actions:
+
+[1m  # docker_container.nginx[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "docker_container" "nginx" {
+      [31m-[0m[0m attach                                      = false [90m-> null[0m[0m
+      [31m-[0m[0m command                                     = [
+          [31m-[0m[0m "nginx",
+          [31m-[0m[0m "-g",
+          [31m-[0m[0m "daemon off;",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m container_read_refresh_timeout_milliseconds = 15000 [90m-> null[0m[0m
+      [31m-[0m[0m cpu_shares                                  = 0 [90m-> null[0m[0m
+      [31m-[0m[0m dns                                         = [] [90m-> null[0m[0m
+      [31m-[0m[0m dns_opts                                    = [] [90m-> null[0m[0m
+      [31m-[0m[0m dns_search                                  = [] [90m-> null[0m[0m
+      [31m-[0m[0m entrypoint                                  = [
+          [31m-[0m[0m "/docker-entrypoint.sh",
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m env                                         = [] [90m-> null[0m[0m
+      [31m-[0m[0m group_add                                   = [] [90m-> null[0m[0m
+      [31m-[0m[0m hostname                                    = "126141a01a84" [90m-> null[0m[0m
+      [31m-[0m[0m id                                          = "126141a01a8493a12f391f12900d7c35c3f68e77d356d6388e3ccb454e0df66a" [90m-> null[0m[0m
+      [31m-[0m[0m image                                       = "nginx:latest" [90m-> null[0m[0m
+      [31m-[0m[0m init                                        = false [90m-> null[0m[0m
+      [31m-[0m[0m ipc_mode                                    = "private" [90m-> null[0m[0m
+      [31m-[0m[0m log_driver                                  = "json-file" [90m-> null[0m[0m
+      [31m-[0m[0m log_opts                                    = {} [90m-> null[0m[0m
+      [31m-[0m[0m logs                                        = false [90m-> null[0m[0m
+      [31m-[0m[0m max_retry_count                             = 0 [90m-> null[0m[0m
+      [31m-[0m[0m memory                                      = 0 [90m-> null[0m[0m
+      [31m-[0m[0m memory_swap                                 = 0 [90m-> null[0m[0m
+      [31m-[0m[0m must_run                                    = true [90m-> null[0m[0m
+      [31m-[0m[0m name                                        = "nginx_container" [90m-> null[0m[0m
+      [31m-[0m[0m network_data                                = [
+          [31m-[0m[0m {
+              [31m-[0m[0m gateway                   = "172.17.0.1"
+              [31m-[0m[0m global_ipv6_prefix_length = 0
+              [31m-[0m[0m ip_address                = "172.17.0.2"
+              [31m-[0m[0m ip_prefix_length          = 16
+              [31m-[0m[0m mac_address               = "8a:37:d3:ad:12:a0"
+              [31m-[0m[0m network_name              = "bridge"
+                [90m# (2 unchanged attributes hidden)[0m[0m
+            },
+        ] [90m-> null[0m[0m
+      [31m-[0m[0m network_mode                                = "bridge" [90m-> null[0m[0m
+      [31m-[0m[0m privileged                                  = false [90m-> null[0m[0m
+      [31m-[0m[0m publish_all_ports                           = false [90m-> null[0m[0m
+      [31m-[0m[0m read_only                                   = false [90m-> null[0m[0m
+      [31m-[0m[0m remove_volumes                              = true [90m-> null[0m[0m
+      [31m-[0m[0m restart                                     = "no" [90m-> null[0m[0m
+      [31m-[0m[0m rm                                          = false [90m-> null[0m[0m
+      [31m-[0m[0m runtime                                     = "runc" [90m-> null[0m[0m
+      [31m-[0m[0m security_opts                               = [] [90m-> null[0m[0m
+      [31m-[0m[0m shm_size                                    = 64 [90m-> null[0m[0m
+      [31m-[0m[0m start                                       = true [90m-> null[0m[0m
+      [31m-[0m[0m stdin_open                                  = false [90m-> null[0m[0m
+      [31m-[0m[0m stop_signal                                 = "SIGQUIT" [90m-> null[0m[0m
+      [31m-[0m[0m stop_timeout                                = 0 [90m-> null[0m[0m
+      [31m-[0m[0m storage_opts                                = {} [90m-> null[0m[0m
+      [31m-[0m[0m sysctls                                     = {} [90m-> null[0m[0m
+      [31m-[0m[0m tmpfs                                       = {} [90m-> null[0m[0m
+      [31m-[0m[0m tty                                         = false [90m-> null[0m[0m
+      [31m-[0m[0m wait                                        = false [90m-> null[0m[0m
+      [31m-[0m[0m wait_timeout                                = 60 [90m-> null[0m[0m
+        [90m# (7 unchanged attributes hidden)[0m[0m
+
+      [31m-[0m[0m ports {
+          [31m-[0m[0m external = 8080 [90m-> null[0m[0m
+          [31m-[0m[0m internal = 80 [90m-> null[0m[0m
+          [31m-[0m[0m ip       = "0.0.0.0" [90m-> null[0m[0m
+          [31m-[0m[0m protocol = "tcp" [90m-> null[0m[0m
+        }
+    }
+
+[1m  # docker_image.nginx[0m will be [1m[31mdestroyed[0m
+[0m  [31m-[0m[0m resource "docker_image" "nginx" {
+      [31m-[0m[0m id           = "sha256:2cd1d97f893f70cee86a38b7160c30e5750f3ed6ad86c598884ca9c6a563a501nginx:latest" [90m-> null[0m[0m
+      [31m-[0m[0m image_id     = "sha256:2cd1d97f893f70cee86a38b7160c30e5750f3ed6ad86c598884ca9c6a563a501" [90m-> null[0m[0m
+      [31m-[0m[0m keep_locally = false [90m-> null[0m[0m
+      [31m-[0m[0m name         = "nginx:latest" [90m-> null[0m[0m
+      [31m-[0m[0m repo_digest  = "nginx@sha256:84ec966e61a8c7846f509da7eb081c55c1d56817448728924a87ab32f12a72fb" [90m-> null[0m[0m
+    }
+
+[1mPlan:[0m 0 to add, 0 to change, 2 to destroy.
+[0m
+Changes to Outputs:
+  [31m-[0m[0m container_id = "126141a01a8493a12f391f12900d7c35c3f68e77d356d6388e3ccb454e0df66a" [90m-> null[0m[0m
+  [31m-[0m[0m host_port    = 8080 [90m-> null[0m[0m
+[0m[1mdocker_container.nginx: Destroying... [id=126141a01a8493a12f391f12900d7c35c3f68e77d356d6388e3ccb454e0df66a][0m[0m
+[0m[1mdocker_container.nginx: Destruction complete after 1s[0m
+[0m[1mdocker_image.nginx: Destroying... [id=sha256:2cd1d97f893f70cee86a38b7160c30e5750f3ed6ad86c598884ca9c6a563a501nginx:latest][0m[0m
+[0m[1mdocker_image.nginx: Destruction complete after 0s[0m
+[0m[1m[32m
+Destroy complete! Resources: 2 destroyed.
+[0m
