@@ -2,6 +2,8 @@
 
 This project demonstrates how to use the [Docker provider](https://registry.terraform.io/providers/kreuzwerker/docker/latest/docs) in [Terraform](https://www.terraform.io/) to provision and manage a Docker container. It also includes a [Nix Flake](https://nixos.wiki/wiki/Flakes) setup for reproducible development environments, especially for NixOS users. Also because I run NixOS primarily.
 
+[📹 **Watch Full Demo(YouTube)**](https://youtu.be/OA64AocUSgA)
+
 ---
 
 ## 📁 Project Structure
